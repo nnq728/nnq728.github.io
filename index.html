@@ -62,6 +62,68 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-html+css tips" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/18/html+css tips/" class="article-date">
+  <time datetime="2019-10-18T02:34:16.112Z" itemprop="datePublished">2019-10-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="html-css-tips"><a href="#html-css-tips" class="headerlink" title="html+css tips"></a>html+css tips</h1><ol>
+<li><p>浮动的元素和加了绝对定位的元素可以直接给大小</p>
+</li>
+<li><p>子绝对位置   父相对位置  “子绝父相”</p>
+</li>
+<li><p>垂直居中，top 50%，再往上走自己高度的一半</p>
+</li>
+<li><p>半透明写法  rgba</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener">CSS</a> 属性 <strong><code>border-radius</code></strong> 可以设置元素的外边框圆角</p>
+<p>/<em>鼠标经过显示小手</em>/</p>
+<pre><code>cursor: pointer;</code></pre></li>
+<li><p>Border : 像素 样式(a b c) 颜色</p>
+<ol>
+<li>solid 实线</li>
+<li>Dotted 点线</li>
+<li>Dashed 虚线</li>
+</ol>
+</li>
+<li></li><li>默认是竖着排列的，要浮动</li>
+<li><p>overflow: hidden;溢出部分隐藏</p>
+</li>
+<li><p>/<em>让加粗的不变粗</em>/</p>
+<pre><code>font-weight: normal;</code></pre></li>
+</ol>
+<p>之前的品优购目前的进度如下：</p>
+<p>![](/Users/qian/Desktop/屏幕快照 2019-10-18 22.11.19.png)</p>
+<p>![屏幕快照 2019-10-18 22.11.38](/Users/qian/Desktop/屏幕快照 2019-10-18 22.11.38.png)</p>
+<ol>
+<li>顶部快捷导航shortcut</li>
+<li>header</li>
+<li>nav</li>
+<li>Main（focus+newsflash）</li>
+<li>recommend（recom-hd+recom-bd）</li>
+<li>Footer</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/18/html+css tips/" data-id="ck1w8zdrj0000bkxzk0rfkds1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-short_cut" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/08/short_cut/" class="article-date">
@@ -84,9 +146,8 @@
 </li>
 <li><p><strong><em>字体图标</em></strong>：网页上的购物车等页面元素其实<strong>是字体图标并不是图片</strong>。<a href="http://icomoon.io" target="_blank" rel="noopener">icomoon字库</a>，下载相应图标的压缩包并解压后，首先把其中的font文件夹放入网页项目的根目录下，然后将压缩包里的demo.html中需要的图标添加到.html文件对应的结构中（可能是div、span或li标签等），<code>&lt;span&gt;&lt;/span&gt;</code>，然后再在样式里声明字体，代码如下：<figure class="highlight plain"><figcaption><span>&#123;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">  font-family: &apos;icomoon&apos;;</span><br><span class="line">  src:  url(&apos;fonts/icomoon.eot?7kkyc2&apos;);</span><br><span class="line">  src:  url(&apos;fonts/icomoon.eot?7kkyc2#iefix&apos;) format(&apos;embedded-opentype&apos;),</span><br><span class="line">    url(&apos;fonts/icomoon.ttf?7kkyc2&apos;) format(&apos;truetype&apos;),</span><br><span class="line">    url(&apos;fonts/icomoon.woff?7kkyc2&apos;) format(&apos;woff&apos;),</span><br><span class="line">    url(&apos;fonts/icomoon.svg?7kkyc2#icomoon&apos;) format(&apos;svg&apos;);</span><br><span class="line">  font-weight: normal;</span><br><span class="line">  font-style: normal;</span><br><span class="line">&#125;。</span><br></pre></td></tr></table></figure></p>
 </li>
-<li><p>最后给相应的盒子使用字体``span {</p>
-<pre><code>    font-family: &quot;icomoon&quot;;
-}``</code></pre></li>
+<li><p>最后给相应的盒子使用字体<figure class="highlight plain"><figcaption><span>&#123;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">	font-family: &quot;icomoon&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</li>
 <li><p>版心：用.w确定版心的位置。在此次的页面中，设计快捷导航的基本思路是先确定版心的位置，然后分为左右两部分分别浮动在左右两边。</p>
 </li>
 <li><p>对于一些颜色的字体，由于页面中会出现许多次，所以也可以将其颜色定义在公共样式表中，例如<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">	color: #c81623;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -102,7 +163,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/08/short_cut/" data-id="ck1hyavfu00034axzuwkur62c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/08/short_cut/" data-id="ck1w8zdrm0001bkxzhibwq4vw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -129,7 +190,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/pattern-recognition/" data-id="ck1hyavfs00024axztj9337y8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/10/pattern-recognition/" data-id="ck1w8zdrr0005bkxzggdgw80r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -156,7 +217,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/17/third/" data-id="ck1hyavfv00044axz57h3d3cd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/17/third/" data-id="ck1w8zdrn0002bkxzbjvajuch" class="article-share-link">Share</a>
       
       
     </footer>
@@ -205,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/14/hello-world/" data-id="ck1hyavfq00014axzwyzmc47p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/14/hello-world/" data-id="ck1w8zdro0003bkxz6cmhzsqk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -268,7 +329,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/14/Python学习心得/" data-id="ck1hyavfn00004axzltnz4l8l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/14/Python学习心得/" data-id="ck1w8zdrp0004bkxzq36i8f7w" class="article-share-link">Share</a>
       
       
     </footer>
@@ -309,6 +370,10 @@
       <ul>
         
           <li>
+            <a href="/2019/10/18/html+css tips/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2019/10/08/short_cut/">(no title)</a>
           </li>
         
@@ -322,10 +387,6 @@
         
           <li>
             <a href="/2019/07/14/hello-world/">胡倩的第一篇博客</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/14/Python学习心得/">Python学习心得</a>
           </li>
         
       </ul>

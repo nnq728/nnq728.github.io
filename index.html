@@ -62,6 +62,58 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-transition" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/21/transition/" class="article-date">
+  <time datetime="2019-10-21T04:09:52.000Z" itemprop="datePublished">2019-10-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/21/transition/">transition</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h2><p>过渡（transition）是CSS3中具有颠覆性的特征之一，可以在不使用Flash和JavaScript的情况下，当元素从一种样式变为另一种样式时为元素添加效果。配合hover一起使用。</p>
+<hr>
+<p>transition:  要过渡的属性 花费时间 运动曲线 何时开始；</p>
+<ul>
+<li><p>属性： 就是想要变化的css属性，背景宽度 颜色 内外边距都可以。（若所有属性都变可以用all）</p>
+</li>
+<li><p>花费时间： 单位是秒(s)，比如0.5s，单位必须要写。</p>
+</li>
+<li><p>运动曲线： 默认是ease (linear匀速  ease逐渐慢下来  ease-in加速  ease-out减速  ease-in-out先加速后减速)</p>
+</li>
+<li><p>何时开始： 默认是0秒，鼠标触发就立即开始，可以设置延迟触发时间。</p>
+<p>如果有多组属性，用逗号隔开。</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">		div &#123;</span><br><span class="line">			width: 400px;</span><br><span class="line">			height: 150px;</span><br><span class="line">			background-color: pink;</span><br><span class="line">			/*1. transition:要过渡的属性 花费时间 运动曲线 何时开始;*/</span><br><span class="line">			/*2. transition: width 1s ease 0s,height 1s ease 0s,background-color 1s ease 0s;*/</span><br><span class="line">			/*3. all 所有属性都会变化*/</span><br><span class="line">			/*transition: all 1s ease 0s;*/</span><br><span class="line">			/*4. 过渡写到本身上*/</span><br><span class="line">			transition: all 0.5s;</span><br><span class="line">		&#125;</span><br><span class="line">		div:hover &#123;</span><br><span class="line">			width: 600px;</span><br><span class="line">			height: 250px;</span><br><span class="line">			background-color: purple;</span><br><span class="line">		&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/21/transition/" data-id="ck1zrq2oj000893xzbof11725" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-list" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/20/list/" class="article-date">
@@ -102,7 +154,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/20/list/" data-id="ck1ypdwbo00042zxz3j5k4vhv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/20/list/" data-id="ck1zrq2od000493xzbm22ghzb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -121,6 +173,16 @@
   </div>
   <div class="article-inner">
     
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/19/short_cut/">shortcut</a>
+    </h1>
+  
+
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -157,49 +219,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/19/short_cut/" data-id="ck1ypdwc600092zxzfswupyat" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-transition" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/19/transition/" class="article-date">
-  <time datetime="2019-10-19T08:51:44.937Z" itemprop="datePublished">2019-10-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h2><p>过渡（transition）是CSS3中具有颠覆性的特征之一，可以在不使用Flash和JavaScript的情况下，当元素从一种样式变为另一种样式时为元素添加效果。配合hover一起使用。</p>
-<hr>
-<p>transition:  要过渡的属性 花费时间 运动曲线 何时开始；</p>
-<ul>
-<li><p>属性： 就是想要变化的css属性，背景宽度 颜色 内外边距都可以。（若所有属性都变可以用all）</p>
-</li>
-<li><p>花费时间： 单位是秒(s)，比如0.5s，单位必须要写。</p>
-</li>
-<li><p>运动曲线： 默认是ease (linear匀速  ease逐渐慢下来  ease-in加速  ease-out减速  ease-in-out先加速后减速)</p>
-</li>
-<li><p>何时开始： 默认是0秒，鼠标触发就立即开始，可以设置延迟触发时间。</p>
-<p>如果有多组属性，用逗号隔开。</p>
-</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">		div &#123;</span><br><span class="line">			width: 400px;</span><br><span class="line">			height: 150px;</span><br><span class="line">			background-color: pink;</span><br><span class="line">			/*1. transition:要过渡的属性 花费时间 运动曲线 何时开始；*/</span><br><span class="line">			/*2. transition: width 1s ease 0s,height 1s ease 0s,background-color 1s ease 0s;*/</span><br><span class="line">			/*3/ all 所有属性都会变化*/</span><br><span class="line">			/*transition: all 1s ease 0s;*/</span><br><span class="line">			/*4. 过渡写到本身上*/</span><br><span class="line">			transition: all 0.5s;</span><br><span class="line">		&#125;</span><br><span class="line">		div:hover &#123;</span><br><span class="line">			width: 600px;</span><br><span class="line">			height: 250px;</span><br><span class="line">			background-color: purple;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/19/transition/" data-id="ck1ypdwbt00072zxzx0mvpafm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/19/short_cut/" data-id="ck1zrq2of000693xz38ksq7m0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -219,6 +239,16 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/19/part1-6/">index</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="part1-6"><a href="#part1-6" class="headerlink" title="part1-6"></a>part1-6</h1><ul>
@@ -234,7 +264,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/19/part1-6/" data-id="ck1ypdwbn00032zxz73slhfxp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/19/part1-6/" data-id="ck1zrq2oe000593xz24awkd1s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -254,13 +284,23 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/18/chishi/">party</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="今天参加了班级聚餐～"><a href="#今天参加了班级聚餐～" class="headerlink" title="今天参加了班级聚餐～"></a>今天参加了班级聚餐～</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/18/chishi/" data-id="ck1ypdwbm00022zxzp7f7bbj5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/18/chishi/" data-id="ck1zrq2oa000193xzokglfv5e" class="article-share-link">Share</a>
       
       
     </footer>
@@ -279,6 +319,16 @@
   </div>
   <div class="article-inner">
     
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/18/html+css tips/">html_css</a>
+    </h1>
+  
+
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -317,7 +367,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/18/html+css tips/" data-id="ck1ypdwc500082zxzk0eehu3k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/18/html+css tips/" data-id="ck1zrq2oc000293xzve1zzpiu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -327,24 +377,55 @@
 
 
   
-    <article id="post-pattern-recognition" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-tips" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/09/10/pattern-recognition/" class="article-date">
-  <time datetime="2019-09-10T01:38:42.938Z" itemprop="datePublished">2019-09-10</time>
+    <a href="/2019/09/10/tips/" class="article-date">
+  <time datetime="2019-09-10T01:41:22.000Z" itemprop="datePublished">2019-09-10</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/10/tips/">tips</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>《基于Python的模式识别综合性设计实验》总结如下：</p>
+        <p>‘list’ object has no attribute ‘shape’</p>
+<p>matrix是array的分支，matrix和array在很多时候都是通用的，你用哪一个都一样。但这时候，官方建议大家如果两个可以通用，那就选择array，因为array更灵活，速度更快，很多人把二维的array也翻译成矩阵</p>
+<p>elastic net是结合了lasso和ridge regression的模型，其计算公式</p>
+<p>根据官网介绍：elasticnet在具有多个特征，并且特征之间具有一定关联的数据中比较有用。</p>
+<p>numpy中的ravel()、flatten()、squeeze()都有将多维数组转换为一维数组的功能，区别：<br>ravel()：如果没有必要，不会产生源数据的副本<br>flatten()：返回源数据的副本<br>squeeze()：只能对维数为1的维度降维</p>
+<p>另外，reshape(-1)也可以“拉平”多维数组</p>
+<p>np.floor 返回不大于输入参数的最大整数</p>
+<p>LAR：</p>
+<ol>
+<li>对Predictors进行标准化（去除不同尺度的影响），对Target Variable进行中心化（去除截距项的影响），初始的所有系数都设为0，此时残差 r 就等于中心化后的Target Variable</li>
+<li>找出和残差r相关度最高的变量X_j</li>
+<li>将X_j的系数Beta_j 从0开始沿着LSE（只有一个变量X_j的最小二乘估计）的方向变化，直到某个新的变量X_k与残差r的相关性大于X_j时</li>
+<li>X_j和X_k的系数Beta_j和Beta_k，一起沿着新的LSE（加入了新变量X_k的最小二乘估计）的方向移动，直到有新的变量被选入</li>
+<li>重复2，3，4，直到所有变量被选入，最后得到的估计就是普通线性回归的OLS。</li>
+</ol>
+<p>LassoCV: coordinate descent</p>
+<p>plt.axvline用于画出竖线</p>
+<p>高×宽×颜色通道</p>
+<p>HSV 表示hue、saturation、value   色调，饱和度，值</p>
+<p>如果你的问题在StackOverflow上找到了最优方案，就把链接放到代码注释里。</p>
+<p>Python endswith() 方法用于判断字符串是否以指定后缀结尾</p>
+<p>os.path.join()在拼接路径的时候用的。<br>举个例子，<br>os.path.join(“home”, “me”, “mywork”)<br>在Linux系统上会返回<br>“home/me/mywork”</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/pattern-recognition/" data-id="ck1ypdwbp00052zxz6yeq1x93" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/10/tips/" data-id="ck208yki30001xgxzrjxsnd5u" class="article-share-link">Share</a>
       
       
     </footer>
@@ -364,6 +445,16 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/17/third/">first</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>独立完成的第一次作业</p>
@@ -371,7 +462,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/17/third/" data-id="ck1ypdwbp00062zxz3lt3d614" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/17/third/" data-id="ck1zrq2og000793xzxbuixzly" class="article-share-link">Share</a>
       
       
     </footer>
@@ -420,7 +511,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/14/hello-world/" data-id="ck1ypdwbk00012zxzppn97xo4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/14/hello-world/" data-id="ck1zrq2od000393xzsflytfy6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -430,9 +521,9 @@
 
 
   
-    <article id="post-Python学习心得" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Python-learning" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/03/14/Python学习心得/" class="article-date">
+    <a href="/2019/03/14/Python-learning/" class="article-date">
   <time datetime="2019-03-14T06:54:07.000Z" itemprop="datePublished">2019-03-14</time>
 </a>
     
@@ -444,7 +535,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/14/Python学习心得/">Python学习心得</a>
+      <a class="article-title" href="/2019/03/14/Python-learning/">Python-learning</a>
     </h1>
   
 
@@ -483,7 +574,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/14/Python学习心得/" data-id="ck1ypdwbg00002zxzoevw2qbp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/14/Python-learning/" data-id="ck208ykhx0000xgxz86fr4378" class="article-share-link">Share</a>
       
       
     </footer>
@@ -524,23 +615,23 @@
       <ul>
         
           <li>
+            <a href="/2019/10/21/transition/">transition</a>
+          </li>
+        
+          <li>
             <a href="/2019/10/20/list/">List</a>
           </li>
         
           <li>
-            <a href="/2019/10/19/short_cut/">(no title)</a>
+            <a href="/2019/10/19/short_cut/">shortcut</a>
           </li>
         
           <li>
-            <a href="/2019/10/19/transition/">(no title)</a>
+            <a href="/2019/10/19/part1-6/">index</a>
           </li>
         
           <li>
-            <a href="/2019/10/19/part1-6/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/18/chishi/">(no title)</a>
+            <a href="/2019/10/18/chishi/">party</a>
           </li>
         
       </ul>
@@ -555,7 +646,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
+      &copy; 2019 Qian<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

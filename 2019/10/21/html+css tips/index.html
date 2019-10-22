@@ -5,19 +5,22 @@
   
 
   
-  <title>List | Hexo</title>
+  <title>html_css | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="列表页准备工作 列表页面是新的页面，需要新建list.html 因为列表页的头部和底部与首页基本一致，需要把首页中的头部和底部的结构复制过去 头部和底部的 样式 ，列表也需要，因此list.html也需要引入 common.css 同时需要新的 list.css 文件  这个 样式文件 ，里面只写 list.html 结构里面的内容就好了 em标签用来强调文本，del标签用于添加删除线，font-">
+  <meta name="description" content="html+css tips 浮动的元素和加了绝对定位的元素可以直接给大小 子绝对位置   父相对位置  “子绝父相” 垂直居中，top 50%，再往上走自己高度的一半 半透明写法  rgba CSS 属性 border-radius 可以设置元素的外边框圆角    Border : 像素 样式(a b c) 颜色。  ​           2.li标签默认是竖着排列的，要浮动  overflow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="List">
-<meta property="og:url" content="http://yoursite.com/2019/10/20/list/index.html">
+<meta property="og:title" content="html_css">
+<meta property="og:url" content="http://yoursite.com/2019/10/21/html+css tips/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="列表页准备工作 列表页面是新的页面，需要新建list.html 因为列表页的头部和底部与首页基本一致，需要把首页中的头部和底部的结构复制过去 头部和底部的 样式 ，列表也需要，因此list.html也需要引入 common.css 同时需要新的 list.css 文件  这个 样式文件 ，里面只写 list.html 结构里面的内容就好了 em标签用来强调文本，del标签用于添加删除线，font-">
+<meta property="og:description" content="html+css tips 浮动的元素和加了绝对定位的元素可以直接给大小 子绝对位置   父相对位置  “子绝父相” 垂直居中，top 50%，再往上走自己高度的一半 半透明写法  rgba CSS 属性 border-radius 可以设置元素的外边框圆角    Border : 像素 样式(a b c) 颜色。  ​           2.li标签默认是竖着排列的，要浮动  overflow">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-10-20T08:08:06.000Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/10/18/KeRJte.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/10/18/KeRRcn.png">
+<meta property="og:updated_time" content="2019-10-21T04:08:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="List">
-<meta name="twitter:description" content="列表页准备工作 列表页面是新的页面，需要新建list.html 因为列表页的头部和底部与首页基本一致，需要把首页中的头部和底部的结构复制过去 头部和底部的 样式 ，列表也需要，因此list.html也需要引入 common.css 同时需要新的 list.css 文件  这个 样式文件 ，里面只写 list.html 结构里面的内容就好了 em标签用来强调文本，del标签用于添加删除线，font-">
+<meta name="twitter:title" content="html_css">
+<meta name="twitter:description" content="html+css tips 浮动的元素和加了绝对定位的元素可以直接给大小 子绝对位置   父相对位置  “子绝父相” 垂直居中，top 50%，再往上走自己高度的一半 半透明写法  rgba CSS 属性 border-radius 可以设置元素的外边框圆角    Border : 像素 样式(a b c) 颜色。  ​           2.li标签默认是竖着排列的，要浮动  overflow">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/10/18/KeRJte.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +67,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-list" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-html+css tips" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/10/20/list/" class="article-date">
-  <time datetime="2019-10-20T08:08:06.000Z" itemprop="datePublished">2019-10-20</time>
+    <a href="/2019/10/21/html+css tips/" class="article-date">
+  <time datetime="2019-10-21T04:08:40.000Z" itemprop="datePublished">2019-10-21</time>
 </a>
     
   </div>
@@ -78,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      List
+      html_css
     </h1>
   
 
@@ -86,25 +89,42 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="列表页准备工作"><a href="#列表页准备工作" class="headerlink" title="列表页准备工作"></a>列表页准备工作</h1><ul>
-<li>列表页面是新的页面，需要新建list.html</li>
-<li>因为列表页的头部和底部与首页基本一致，需要把首页中的头部和底部的结构复制过去</li>
-<li>头部和底部的 样式 ，列表也需要，因此list.html也需要引入 common.css</li>
-<li>同时需要新的 list.css 文件  这个 样式文件 ，里面只写 list.html 结构里面的内容就好了</li>
-<li>em标签用来强调文本，del标签用于添加删除线，font-weight用于加粗效果</li>
-<li>当父元素不给高度的时候，内部元素不浮动时会撑开;而浮动的时候，父元素变成一条线。清除浮动最常用的四种方法如下：<ol>
-<li>额外标签法（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）</li>
-<li>父级添加overflow属性（父元素添加overflow:hidden）（不推荐）</li>
-<li>使用after伪元素清除浮动（推荐使用）</li>
-<li>使用before和after双伪元素清除浮动</li>
+        <h1 id="html-css-tips"><a href="#html-css-tips" class="headerlink" title="html+css tips"></a>html+css tips</h1><ol>
+<li>浮动的元素和加了绝对定位的元素可以直接给大小</li>
+<li>子绝对位置   父相对位置  “子绝父相”</li>
+<li>垂直居中，top 50%，再往上走自己高度的一半</li>
+<li>半透明写法  rgba</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener">CSS</a> 属性 <strong><code>border-radius</code></strong> 可以设置元素的外边框圆角</li>
 </ol>
+<hr>
+<ol>
+<li>Border : 像素 样式(a b c) 颜色。</li>
+</ol>
+<p>​           2.li标签默认是竖着排列的，要浮动</p>
+<ul>
+<li><p>overflow: hidden;溢出部分隐藏</p>
+</li>
+<li><p><strong>让加粗的不变粗</strong> font-weight:  normal;</p>
 </li>
 </ul>
+<p>之前的品优购目前的进度如下：</p>
+<p><img src="https://s2.ax1x.com/2019/10/18/KeRJte.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/10/18/KeRRcn.png" alt></p>
+<ol>
+<li>顶部快捷导航shortcut</li>
+<li>header</li>
+<li>nav</li>
+<li>Main（focus+newsflash）</li>
+<li>recommend（recom-hd+recom-bd）</li>
+<li>Footer</li>
+</ol>
+<p><strong>tips</strong>:</p>
+<p><a href="https://imgchr.com/" target="_blank" rel="noopener">https://imgchr.com/</a>  把本地图片转换成url。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/20/list/" data-id="ck21vs6dx00032qxzfbouacac" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/html+css tips/" data-id="ck21vs6dw00022qxzwvl5mkfp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -113,19 +133,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/10/21/chishi/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/10/21/part1-6/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          party
+          index
         
       </div>
     </a>
   
   
-    <a href="/2019/09/10/tips/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/10/21/chishi/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">tips</div>
+      <div class="article-nav-title">party</div>
     </a>
   
 </nav>

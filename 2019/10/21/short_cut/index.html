@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>shortcut | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="顶部快捷导航制作经验html初学者尝试制作类似电商风格的网页，本次记录的是第一部分制作导航栏的经验  由于不管是详情页还是列表页或者首页，网页头部中的导航栏是相同的，其中导航栏的效果如下图。  公共样式单独写在common.css下便于在html文件中引用。CSS选择器分为三类：id选择器、class选择器、标签选择器，此处多用class选择器。    .fl定义向左浮动，.fr定义向右浮动，此后">
+<meta property="og:type" content="article">
+<meta property="og:title" content="shortcut">
+<meta property="og:url" content="http://yoursite.com/2019/10/21/short_cut/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="顶部快捷导航制作经验html初学者尝试制作类似电商风格的网页，本次记录的是第一部分制作导航栏的经验  由于不管是详情页还是列表页或者首页，网页头部中的导航栏是相同的，其中导航栏的效果如下图。  公共样式单独写在common.css下便于在html文件中引用。CSS选择器分为三类：id选择器、class选择器、标签选择器，此处多用class选择器。    .fl定义向左浮动，.fr定义向右浮动，此后">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-10-21T04:09:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="shortcut">
+<meta name="twitter:description" content="顶部快捷导航制作经验html初学者尝试制作类似电商风格的网页，本次记录的是第一部分制作导航栏的经验  由于不管是详情页还是列表页或者首页，网页头部中的导航栏是相同的，其中导航栏的效果如下图。  公共样式单独写在common.css下便于在html文件中引用。CSS选择器分为三类：id选择器、class选择器、标签选择器，此处多用class选择器。    .fl定义向左浮动，.fr定义向右浮动，此后">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-short_cut" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/21/short_cut/" class="article-date">
+  <time datetime="2019-10-21T04:09:16.000Z" itemprop="datePublished">2019-10-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      shortcut
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="顶部快捷导航制作经验"><a href="#顶部快捷导航制作经验" class="headerlink" title="顶部快捷导航制作经验"></a>顶部快捷导航制作经验</h1><p><strong>html初学者尝试制作类似电商风格的网页，本次记录的是第一部分制作导航栏的经验</strong></p>
+<ol>
+<li><p>由于不管是详情页还是列表页或者首页，网页头部中的导航栏是相同的，其中导航栏的效果如下图。</p>
+</li>
+<li><p>公共样式单独写在common.css下便于在html文件中引用。CSS选择器分为三类：id选择器、class选择器、标签选择器，此处多用class选择器。</p>
+</li>
+</ol>
+<ul>
+<li><p>.fl定义向左浮动，.fr定义向右浮动，此后在.html中如有块或行需要用到向左向右浮动直接引用即可，即设定中的class值。</p>
+</li>
+<li><p><strong>字体图标</strong>：网页上的购物车等页面元素其实<strong>是字体图标并不是图片</strong>。<a href="http://icomoon.io" target="_blank" rel="noopener">icomoon字库</a>，下载相应图标的压缩包并解压后，首先把其中的font文件夹放入网页项目的根目录下，然后将压缩包里的demo.html中需要的图标添加到.html文件对应的结构中（可能是div、span或li标签等），<code>&lt;span&gt;&lt;/span&gt;</code>，然后再在样式里声明字体，代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">font-family: 'icomoon';</span><br><span class="line">  src:  url('fonts/icomoon.eot?7kkyc2');</span><br><span class="line">  src:  url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),</span><br><span class="line">    url('fonts/icomoon.ttf?7kkyc2') format('truetype'),</span><br><span class="line">    url('fonts/icomoon.woff?7kkyc2') format('woff'),</span><br><span class="line">    url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');</span><br><span class="line">  font-weight: normal;</span><br><span class="line">  font-style: normal;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>​                最后给相应的盒子使用字体：font-family: “icomoon”;</p>
+<ul>
+<li>版心：用.w确定版心的位置。在此次的页面中，设计快捷导航的基本思路是先确定版心的位置，然后分为左右两部分分别浮动在左右两边。</li>
+</ul>
+<ul>
+<li><p>对于一些颜色的字体，由于页面中会出现许多次，所以也可以将其颜色定义在公共样式表中，例如</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color: #c81623;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对于栏中 | 的处理，这里设定其为12px*1px的灰色区域，字段margin中<code>margin: 9px 12px 0;</code>三个值分别为上外边距、左右外边距、下外边距。</p>
+</li>
+</ul>
+<ol start="3">
+<li>网站优化中有三大标签title、description、keywords，在index.html中，要注意这些字段的编写。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/21/short_cut/" data-id="ck21vs6dz00062qxzgu36kkpx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/10/21/third/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          first
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/10/21/part1-6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">index</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/22/wuxi/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/21/transition/">transition</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/21/third/">first</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/21/short_cut/">shortcut</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/21/part1-6/">index</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Qian<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

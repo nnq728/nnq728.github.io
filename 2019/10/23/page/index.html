@@ -5,19 +5,19 @@
   
 
   
-  <title>List | Hexo</title>
+  <title>分页制作 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="列表页准备工作 列表页面是新的页面，需要新建list.html 因为列表页的头部和底部与首页基本一致，需要把首页中的头部和底部的结构复制过去 头部和底部的 样式 ，列表也需要，因此list.html也需要引入 common.css 同时需要新的 list.css 文件  这个 样式文件 ，里面只写 list.html 结构里面的内容就好了 em标签用来强调文本，del标签用于添加删除线，font-">
+  <meta name="description" content="列表页分页制作 text-align可以让里面的文字内容 行内块 行内元素 都可以居中对齐  分页制作’page’，里面盒子全用行内块  &amp;amp;gt 右箭头  &amp;amp;lt左箭头  a标签属于行的元素，没有大小，若用display: inline-block 转换成行内块，若直接转为block 是竖着的  focus获得焦点元素，focus 伪类选择器用于选择获得焦点的元素主要针对的是表单元">
 <meta property="og:type" content="article">
-<meta property="og:title" content="List">
-<meta property="og:url" content="http://yoursite.com/2019/10/20/list/index.html">
+<meta property="og:title" content="分页制作">
+<meta property="og:url" content="http://yoursite.com/2019/10/23/page/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="列表页准备工作 列表页面是新的页面，需要新建list.html 因为列表页的头部和底部与首页基本一致，需要把首页中的头部和底部的结构复制过去 头部和底部的 样式 ，列表也需要，因此list.html也需要引入 common.css 同时需要新的 list.css 文件  这个 样式文件 ，里面只写 list.html 结构里面的内容就好了 em标签用来强调文本，del标签用于添加删除线，font-">
+<meta property="og:description" content="列表页分页制作 text-align可以让里面的文字内容 行内块 行内元素 都可以居中对齐  分页制作’page’，里面盒子全用行内块  &amp;amp;gt 右箭头  &amp;amp;lt左箭头  a标签属于行的元素，没有大小，若用display: inline-block 转换成行内块，若直接转为block 是竖着的  focus获得焦点元素，focus 伪类选择器用于选择获得焦点的元素主要针对的是表单元">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-10-20T08:08:06.000Z">
+<meta property="og:updated_time" content="2019-10-24T13:08:40.976Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="List">
-<meta name="twitter:description" content="列表页准备工作 列表页面是新的页面，需要新建list.html 因为列表页的头部和底部与首页基本一致，需要把首页中的头部和底部的结构复制过去 头部和底部的 样式 ，列表也需要，因此list.html也需要引入 common.css 同时需要新的 list.css 文件  这个 样式文件 ，里面只写 list.html 结构里面的内容就好了 em标签用来强调文本，del标签用于添加删除线，font-">
+<meta name="twitter:title" content="分页制作">
+<meta name="twitter:description" content="列表页分页制作 text-align可以让里面的文字内容 行内块 行内元素 都可以居中对齐  分页制作’page’，里面盒子全用行内块  &amp;amp;gt 右箭头  &amp;amp;lt左箭头  a标签属于行的元素，没有大小，若用display: inline-block 转换成行内块，若直接转为block 是竖着的  focus获得焦点元素，focus 伪类选择器用于选择获得焦点的元素主要针对的是表单元">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-list" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-page" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/10/20/list/" class="article-date">
-  <time datetime="2019-10-20T08:08:06.000Z" itemprop="datePublished">2019-10-20</time>
+    <a href="/2019/10/23/page/" class="article-date">
+  <time datetime="2019-10-23T12:25:17.324Z" itemprop="datePublished">2019-10-23</time>
 </a>
     
   </div>
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      List
+      分页制作
     </h1>
   
 
@@ -86,25 +86,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="列表页准备工作"><a href="#列表页准备工作" class="headerlink" title="列表页准备工作"></a>列表页准备工作</h1><ul>
-<li>列表页面是新的页面，需要新建list.html</li>
-<li>因为列表页的头部和底部与首页基本一致，需要把首页中的头部和底部的结构复制过去</li>
-<li>头部和底部的 样式 ，列表也需要，因此list.html也需要引入 common.css</li>
-<li>同时需要新的 list.css 文件  这个 样式文件 ，里面只写 list.html 结构里面的内容就好了</li>
-<li>em标签用来强调文本，del标签用于添加删除线，font-weight用于加粗效果</li>
-<li>当父元素不给高度的时候，内部元素不浮动时会撑开;而浮动的时候，父元素变成一条线。清除浮动最常用的四种方法如下：<ol>
-<li>额外标签法（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）</li>
-<li>父级添加overflow属性（父元素添加overflow:hidden）（不推荐）</li>
-<li>使用after伪元素清除浮动（推荐使用）</li>
-<li>使用before和after双伪元素清除浮动</li>
-</ol>
+        <h1 id="列表页分页制作"><a href="#列表页分页制作" class="headerlink" title="列表页分页制作"></a>列表页分页制作</h1><ol>
+<li><p>text-align可以让里面的文字内容 行内块 行内元素 都可以居中对齐</p>
 </li>
-</ul>
+<li><p>分页制作’page’，里面盒子全用行内块</p>
+</li>
+<li><p>&amp;gt 右箭头  &amp;lt左箭头</p>
+</li>
+<li><p>a标签属于行的元素，没有大小，若用display: inline-block 转换成<strong>行内块</strong>，若直接转为block 是竖着的</p>
+</li>
+<li><p>focus获得焦点元素，focus 伪类选择器用于选择获得焦点的元素主要针对的是表单元素</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/*表单获得焦点后*/</span><br><span class="line">.page_skip input:focus&#123;</span><br><span class="line">	width: 88px;</span><br><span class="line">	border:1px solid skyblue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<p>列表页分页也制作完毕，接下来开始详情页detail.html（永远是先复制结构，才有样式）。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/20/list/" data-id="ck24q6mef0005pzxzvzmnea2e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/23/page/" data-id="ck24q6mee0004pzxz9i0zxpi5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -113,19 +116,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/10/21/chishi/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          party
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/10/tips/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/10/22/wuxi/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">tips</div>
+      <div class="article-nav-title">无锡之旅</div>
     </a>
   
 </nav>

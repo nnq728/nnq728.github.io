@@ -62,6 +62,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-tips" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/10/tips/" class="article-date">
+  <time datetime="2019-09-10T01:41:22.000Z" itemprop="datePublished">2019-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/10/tips/">tips</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>‘list’ object has no attribute ‘shape’</p>
+<p>matrix是array的分支，matrix和array在很多时候都是通用的，你用哪一个都一样。但这时候，官方建议大家如果两个可以通用，那就选择array，因为array更灵活，速度更快，很多人把二维的array也翻译成矩阵</p>
+<p>elastic net是结合了lasso和ridge regression的模型，其计算公式</p>
+<p>根据官网介绍：elasticnet在具有多个特征，并且特征之间具有一定关联的数据中比较有用。</p>
+<p>numpy中的ravel()、flatten()、squeeze()都有将多维数组转换为一维数组的功能，区别：<br>ravel()：如果没有必要，不会产生源数据的副本<br>flatten()：返回源数据的副本<br>squeeze()：只能对维数为1的维度降维</p>
+<p>另外，reshape(-1)也可以“拉平”多维数组</p>
+<p>np.floor 返回不大于输入参数的最大整数</p>
+<p>LAR：</p>
+<ol>
+<li>对Predictors进行标准化（去除不同尺度的影响），对Target Variable进行中心化（去除截距项的影响），初始的所有系数都设为0，此时残差 r 就等于中心化后的Target Variable</li>
+<li>找出和残差r相关度最高的变量X_j</li>
+<li>将X_j的系数Beta_j 从0开始沿着LSE（只有一个变量X_j的最小二乘估计）的方向变化，直到某个新的变量X_k与残差r的相关性大于X_j时</li>
+<li>X_j和X_k的系数Beta_j和Beta_k，一起沿着新的LSE（加入了新变量X_k的最小二乘估计）的方向移动，直到有新的变量被选入</li>
+<li>重复2，3，4，直到所有变量被选入，最后得到的估计就是普通线性回归的OLS。</li>
+</ol>
+<p>LassoCV: coordinate descent</p>
+<p>plt.axvline用于画出竖线</p>
+<p>高×宽×颜色通道</p>
+<p>HSV 表示hue、saturation、value   色调，饱和度，值</p>
+<p>如果你的问题在StackOverflow上找到了最优方案，就把链接放到代码注释里。</p>
+<p>Python endswith() 方法用于判断字符串是否以指定后缀结尾</p>
+<p>os.path.join()在拼接路径的时候用的。<br>举个例子，<br>os.path.join(“home”, “me”, “mywork”)<br>在Linux系统上会返回<br>“home/me/mywork”</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/09/10/tips/" data-id="ck2726506000cgnxzgrrq0d3e" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/07/14/hello-world/" class="article-date">
@@ -101,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/14/hello-world/" data-id="ck24q6mea0001pzxzjthk6xp7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/14/hello-world/" data-id="ck27264zz000bgnxz9wjpc2qy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -164,7 +222,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/14/Python-learning/" data-id="ck24q6me70000pzxztj4fcaur" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/14/Python-learning/" data-id="ck27264zv0008gnxzxh0563rh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -210,6 +268,10 @@
       <ul>
         
           <li>
+            <a href="/2019/10/25/tips1025/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2019/10/23/page/">分页制作</a>
           </li>
         
@@ -223,10 +285,6 @@
         
           <li>
             <a href="/2019/10/21/third/">first</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/21/short_cut/">shortcut</a>
           </li>
         
       </ul>

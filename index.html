@@ -88,11 +88,38 @@
 </ul>
 <p>常用的块极元素有：</p>
 <p><strong>div、p、h1~h6、ul、ol、dl、li、dd、table、hr、blockquote、address、table、menu、pre，HTML5新增的header、section、aside、footer等</strong></p>
+<p>行高=高，可以实现垂直居中，行高&lt;高，文字会偏上一点；行高&gt;高，文字偏下。</p>
+<p><strong>行内元素</strong></p>
+<ul>
+<li>只能设置左右的<code>margin</code>和<code>padding</code>。</li>
+<li>不能设置高宽，它的<strong>高度取决于内部文字的行高。宽度取决于内部文字的多少</strong>。</li>
+</ul>
+<p><strong>行内块元素</strong>和<strong>块级元素</strong>的属性基本一致。可以设高宽、边距。不同在于它允许左右存在元素。而块级元素就算只有1px也不允许有元素和它共享一行。</p>
+<p>注意：行内元素，行内块元素（行内块有默认的非0 border值）有默认的间隙</p>
+<p>块级元素：</p>
+<p>1.每个块级元素都是独自占一行。 2.元素的高度、宽度、行高和边距都是可以设置的。   3.元素的宽度如果不设置的话，默认为父元素的宽度（父元素宽度100%）。</p>
+<p>行内级元素 inline：</p>
+<p>行内元素不可以设置宽（width）和高（height），但可以与其他行内元素位于同一行，行内元素内一般不可以包含块级元素。行内元素的高度一般由元素内部的字体大小决定，宽度由内容的长度控制。行内元素有以下特点：</p>
+<p>1.每一个行内元素可以和别的行内元素共享一行，相邻的行内元素会排列在同一行里，直到一行排不下了，才会换行。 2.行内元素的高度、宽度、行高及顶部和底部边距不可设置。 3.元素的宽度就是它包含的文字或图片的宽度，不可改变。</p>
+<p>行内块元素 inline-block：</p>
+<p>行内块级元素，它既具有块级元素的特点，也有行内元素的特点，它可以自由设置元素宽度和高度，也可以在一行中放置多个行内块级元素。比如input、img就是行内块级元素，它可以设置高宽以及一行多个。具体特点如下：</p>
+<p>1.和其他行内或行内块级元素元素放置在同一行上； 2.元素的高度、宽度、行高以及顶和底边距都可设置。</p>
+<p> logo 优化</p>
+<ul>
+<li>logo  里面 首先放一个 h1 标签 ，目的是为了提权，告诉搜索引擎，这个地方很重要</li>
+<li>h1里面在放一个连接，可以返回首页的，   给连接一个 大小 和  logo 的背景图片</li>
+<li>连接 里面要放文字（网站名称），为了搜索引擎收录我们。  但是文字不要显示出来<ul>
+<li>要用 text-indent  移到盒子外面 （text-indent: -9999px)   然后overflow:hidden  淘宝的做法</li>
+<li>直接给font-size: 0;  就看不到文字了，  京东的做法。</li>
+</ul>
+</li>
+<li>最后给 连接一个 title  这样鼠标放到logo 上，  就可以看到提示文字了</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/27/inline/" data-id="ck2aj850l00012cxznxkik3e2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/27/inline/" data-id="ck2bx8gjb0002f5xzgvguh9j0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -130,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/25/tips1025/" data-id="ck2aj850u00092cxzqta69yuq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/25/tips1025/" data-id="ck2bx8gk0000cf5xzja4y5hl0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -183,7 +210,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/page/" data-id="ck2aj8510000a2cxzwt5jxbuv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/23/page/" data-id="ck2bx8gjt0006f5xz9ukbghtp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -221,7 +248,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/22/wuxi/" data-id="ck2aj8513000d2cxzfrwd8b7m" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/22/wuxi/" data-id="ck2bx8gk1000df5xz0u95g927" class="article-share-link">Share</a>
       
       
     </footer>
@@ -273,7 +300,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/transition/" data-id="ck2aj8511000b2cxz9s8wnbmd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/transition/" data-id="ck2bx8gjz000bf5xz01j8n5kh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -310,7 +337,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/third/" data-id="ck2aj850q00062cxzjdnxzvyi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/third/" data-id="ck2bx8gjw0009f5xzdatub2d8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -375,7 +402,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/short_cut/" data-id="ck2aj850t00082cxzcmo9cz26" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/short_cut/" data-id="ck2bx8gju0007f5xzc30egxsd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -420,7 +447,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/part1-6/" data-id="ck2aj850s00072cxzawpxx7oj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/part1-6/" data-id="ck2bx8gjv0008f5xznhrwxmpj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -487,7 +514,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/html+css tips/" data-id="ck2aj850h00002cxzhaqfr55b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/html+css tips/" data-id="ck2bx8gjc0003f5xzma0dggeo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -523,7 +550,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/chishi/" data-id="ck2aj850p00042cxzmtw0dq18" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/chishi/" data-id="ck2bx8gj60000f5xzttrshwsa" class="article-share-link">Share</a>
       
       
     </footer>

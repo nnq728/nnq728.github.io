@@ -62,6 +62,132 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-js" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/01/js/" class="article-date">
+  <time datetime="2019-11-01T02:56:56.842Z" itemprop="datePublished">2019-11-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>js中形参和实参可以不匹配，实参&lt;形参个数，多的形参定义为undefined，结果为NaN</p>
+<ol>
+<li><p>js引擎运行js 分为两步： 预解析 代码执行</p>
+<p>(1). 预解析 js引擎会把js 里面所有的 var 还有 function 提升到当前作用域的最前面</p>
+<p>(2). 代码执行 按照代码书写的顺序从上往下执行</p>
+</li>
+<li><p>预解析分为 变量预解析（变量提升） 和 函数预解析（函数提升）</p>
+<p>(1) 变量提升 就是把所有的<strong>变量声明</strong>提升到<strong>当前的作用域</strong>最前面 不提升赋值操作</p>
+<p> (2) 函数提升 就是把所有的<strong>函数声明</strong>提升到当前作用域的最前面 不调用函数</p>
+</li>
+<li><p>一个经典案例：</p>
+<p>​    f1();</p>
+<p>​    console.log(c);</p>
+<p>​    console.log(b);</p>
+<p>​    console.log(a);</p>
+</li>
+</ol>
+<p>   ​    function f1() {</p>
+<p>   ​      <strong>var a = b = c = 9;</strong></p>
+<p>   ​      console.log(a);</p>
+<p>   ​      console.log(b);</p>
+<p>   ​      console.log(c);</p>
+<p>   ​    }</p>
+<p>   ​    //相当于以下代码</p>
+<p>   ​    // function f1() {</p>
+<p>   ​    //   var a;</p>
+<p>   ​    //   a = b = c = 9;</p>
+<p>   ​    //   // 相当于 var a = 9; b = 9; c = 9; b 和 c <strong>直接赋值 没有var 声明 当 全局变量看</strong></p>
+<p>   ​    //   // 集体声明 var a = 9<strong>,</strong> b = 9<strong>,</strong> c = 9;</p>
+<p>   ​    //   console.log(a);</p>
+<p>   ​    //   console.log(b);</p>
+<p>   ​    //   console.log(c);</p>
+<p>   ​    // }</p>
+<p>   ​    // f1();</p>
+<p>   ​    // console.log(c);</p>
+<p>   ​    // console.log(b);</p>
+<p>   ​    // console.log(a);</p>
+<ol start="4">
+<li><p>function 构造函数名() {</p>
+<p>​       this.属性 = 值;</p>
+<p>​      this.方法 = function() { }</p>
+<p>  }</p>
+<p>​     new 构造函数名();</p>
+<p>new关键字执行过程：</p>
+<ul>
+<li><p>new 构造函数可以在内存中创建一个空的对象 </p>
+</li>
+<li><p>this 就会指向刚才创建的空对象</p>
+</li>
+<li><p>执行构造函数里面的代码 给这个空对象添加属性和方法</p>
+</li>
+<li><p>返回这个对象</p>
+</li>
+</ul>
+</li>
+<li><p>for in 遍历对象</p>
+<p>​    for (变量 in 对象) {</p>
+<p>​    }</p>
+<p>​    for (var k in obj) {</p>
+<p>​      console.log(k); // k 变量 输出 得到的是 <strong>属性名</strong></p>
+<p>​      console.log(obj[k]); // obj[k] 得到是 <strong>属性值</strong></p>
+<p>​    }</p>
+<p>for in 里面的变量 喜欢写 k 或者 key</p>
+</li>
+<li><ul>
+<li><p>Math对象随机数方法  random() 返回一个随机的小数 0 =&lt; x &lt; 1</p>
+</li>
+<li><p>这个方法里面不跟参数</p>
+</li>
+<li><p>代码验证  console.log(Math.random());</p>
+</li>
+<li><p>想要得到两个数之间的随机整数 并且 包含这2个整数</p>
+<p> <strong>Math.floor(Math.random() * (max - min + 1)) + min;</strong></p>
+</li>
+</ul>
+<p>​    function getRandom(min, max) {</p>
+<p>​      return Math.floor(Math.random() * (max - min + 1)) + min;</p>
+<p>​    }</p>
+</li>
+<li><p>由于 JavaScript 允许函数有不定数目的参数，所以需要一种机制，可以在函数体内部读取所有参数。这就是<code>arguments</code>对象的由来。</p>
+<p><code>arguments</code>对象包含了函数运行时的所有参数，<code>arguments[0]</code>就是第一个参数，<code>arguments[1]</code>就是第二个参数，以此类推。这个对象只有在函数体内部，才可以使用。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span> (<span class="params">one</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>[<span class="number">0</span>]);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>[<span class="number">1</span>]);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>[<span class="number">2</span>]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">f(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获得Date总的毫秒数(<strong>时间戳</strong>) 不是当前时间的毫秒数 而是距离1970年1月1号过了多少毫秒数</p>
+<ul>
+<li><p>通过 valueOf() getTime()</p>
+<p>​    var date = new Date();</p>
+<p>​    console.log(date.valueOf()); // 就是 现在时间 距离1970.1.1 总的毫秒数</p>
+<p>​    console.log(date.getTime());</p>
+</li>
+<li><p>简单的写法 (最常用的写法)</p>
+<p>​    var date1 = <strong>+</strong>new Date(); // +new Date() 返回总的毫秒数</p>
+<p>​    console.log(date1);</p>
+</li>
+<li><p>H5 新增的 获得总的毫秒数</p>
+<p>​    console.log(<strong>Date.now()</strong>);</p>
+</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/01/js/" data-id="ck2fv9r3z0004lgxzi2zxxoj1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-inline" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/27/inline/" class="article-date">
@@ -119,7 +245,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/27/inline/" data-id="ck2dekffh0000dexzn91qsw92" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/27/inline/" data-id="ck2fv9r4b0005lgxzeg0paf45" class="article-share-link">Share</a>
       
       
     </footer>
@@ -157,7 +283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/25/tips1025/" data-id="ck2dekfge0008dexzn222z7qa" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/25/tips1025/" data-id="ck2fv9r4j000clgxz6nipk5gp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -210,7 +336,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/page/" data-id="ck2dekfgc0006dexzoy9nqtk2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/23/page/" data-id="ck2fv9r4f0009lgxzb3dfiopo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -248,7 +374,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/22/wuxi/" data-id="ck2dekfgh000adexz18to3a45" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/22/wuxi/" data-id="ck2fv9r4k000dlgxzm2kmne94" class="article-share-link">Share</a>
       
       
     </footer>
@@ -300,7 +426,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/transition/" data-id="ck2dekfgi000bdexzmsyx30x9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/transition/" data-id="ck2fv9r4i000blgxzqyo6q7n5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -337,7 +463,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/third/" data-id="ck2dekfgf0009dexz3cwq2a6a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/third/" data-id="ck2fv9r4f0008lgxzdr9b5aru" class="article-share-link">Share</a>
       
       
     </footer>
@@ -402,7 +528,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/short_cut/" data-id="ck2dekfga0004dexzd643el22" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/short_cut/" data-id="ck2fv9r4g000algxzrt8jr0s7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -447,7 +573,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/part1-6/" data-id="ck2dekfgb0005dexz6gafocay" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/part1-6/" data-id="ck2fv9r4e0007lgxzyat9uo5w" class="article-share-link">Share</a>
       
       
     </footer>
@@ -514,43 +640,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/html+css tips/" data-id="ck2dekfg50002dexzkj7u3pxz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-chishi" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/21/chishi/" class="article-date">
-  <time datetime="2019-10-21T04:08:26.000Z" itemprop="datePublished">2019-10-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/21/chishi/">party</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="今天参加了班级聚餐～"><a href="#今天参加了班级聚餐～" class="headerlink" title="今天参加了班级聚餐～"></a>今天参加了班级聚餐～</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/chishi/" data-id="ck2dekfgk000cdexzwk0az469" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/html+css tips/" data-id="ck2fv9r3z0003lgxzt3m7ygpx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -583,7 +673,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
     </div>
   </div>
 
@@ -594,6 +684,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/11/01/js/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2019/10/27/inline/">(no title)</a>
@@ -609,10 +703,6 @@
         
           <li>
             <a href="/2019/10/22/wuxi/">无锡之旅</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/21/transition/">transition</a>
           </li>
         
       </ul>

@@ -5,22 +5,19 @@
   
 
   
-  <title>html_css | Hexo</title>
+  <title>selector | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="html+css tips 浮动的元素和加了绝对定位的元素可以直接给大小 子绝对位置   父相对位置  “子绝父相” 垂直居中，top 50%，再往上走自己高度的一半 半透明写法  rgba CSS 属性 border-radius 可以设置元素的外边框圆角    Border : 像素 样式(a b c) 颜色。  ​           2.li标签默认是竖着排列的，要浮动  overflow">
+  <meta name="description" content="选择器小结最基本的选择器是标签选择器(比如div),ID选择器(比如#header)还有类选择器(比如.tweet)。 一些的不常见的选择器包括伪类选择器(:hover)，很多复杂的CSS3和正则选择器，比如：first-child，class ^= “grid-”。CSS选择器具有高效的继承性，引用Steve Souders的话， CSS选择器效率从高到低的排序如下： 1.id选择器（#myid">
 <meta property="og:type" content="article">
-<meta property="og:title" content="html_css">
-<meta property="og:url" content="http://yoursite.com/2019/10/21/html+css tips/index.html">
+<meta property="og:title" content="selector">
+<meta property="og:url" content="http://yoursite.com/2019/11/02/selector/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="html+css tips 浮动的元素和加了绝对定位的元素可以直接给大小 子绝对位置   父相对位置  “子绝父相” 垂直居中，top 50%，再往上走自己高度的一半 半透明写法  rgba CSS 属性 border-radius 可以设置元素的外边框圆角    Border : 像素 样式(a b c) 颜色。  ​           2.li标签默认是竖着排列的，要浮动  overflow">
+<meta property="og:description" content="选择器小结最基本的选择器是标签选择器(比如div),ID选择器(比如#header)还有类选择器(比如.tweet)。 一些的不常见的选择器包括伪类选择器(:hover)，很多复杂的CSS3和正则选择器，比如：first-child，class ^= “grid-”。CSS选择器具有高效的继承性，引用Steve Souders的话， CSS选择器效率从高到低的排序如下： 1.id选择器（#myid">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://s2.ax1x.com/2019/10/18/KeRJte.png">
-<meta property="og:image" content="https://s2.ax1x.com/2019/10/18/KeRRcn.png">
-<meta property="og:updated_time" content="2019-10-21T04:08:40.000Z">
+<meta property="og:updated_time" content="2019-11-02T10:22:17.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="html_css">
-<meta name="twitter:description" content="html+css tips 浮动的元素和加了绝对定位的元素可以直接给大小 子绝对位置   父相对位置  “子绝父相” 垂直居中，top 50%，再往上走自己高度的一半 半透明写法  rgba CSS 属性 border-radius 可以设置元素的外边框圆角    Border : 像素 样式(a b c) 颜色。  ​           2.li标签默认是竖着排列的，要浮动  overflow">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/10/18/KeRJte.png">
+<meta name="twitter:title" content="selector">
+<meta name="twitter:description" content="选择器小结最基本的选择器是标签选择器(比如div),ID选择器(比如#header)还有类选择器(比如.tweet)。 一些的不常见的选择器包括伪类选择器(:hover)，很多复杂的CSS3和正则选择器，比如：first-child，class ^= “grid-”。CSS选择器具有高效的继承性，引用Steve Souders的话， CSS选择器效率从高到低的排序如下： 1.id选择器（#myid">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-html+css tips" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-selector" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/10/21/html+css tips/" class="article-date">
-  <time datetime="2019-10-21T04:08:40.000Z" itemprop="datePublished">2019-10-21</time>
+    <a href="/2019/11/02/selector/" class="article-date">
+  <time datetime="2019-11-02T10:20:49.602Z" itemprop="datePublished">2019-11-02</time>
 </a>
     
   </div>
@@ -81,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      html_css
+      selector
     </h1>
   
 
@@ -89,42 +86,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="html-css-tips"><a href="#html-css-tips" class="headerlink" title="html+css tips"></a>html+css tips</h1><ol>
-<li>浮动的元素和加了绝对定位的元素可以直接给大小</li>
-<li>子绝对位置   父相对位置  “子绝父相”</li>
-<li>垂直居中，top 50%，再往上走自己高度的一半</li>
-<li>半透明写法  rgba</li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener">CSS</a> 属性 <strong><code>border-radius</code></strong> 可以设置元素的外边框圆角</li>
-</ol>
-<hr>
-<ol>
-<li>Border : 像素 样式(a b c) 颜色。</li>
-</ol>
-<p>​           2.li标签默认是竖着排列的，要浮动</p>
-<ul>
-<li><p>overflow: hidden;溢出部分隐藏</p>
-</li>
-<li><p><strong>让加粗的不变粗</strong> font-weight:  normal;</p>
-</li>
-</ul>
-<p>之前的品优购目前的进度如下：</p>
-<p><img src="https://s2.ax1x.com/2019/10/18/KeRJte.png" alt></p>
-<p><img src="https://s2.ax1x.com/2019/10/18/KeRRcn.png" alt></p>
-<ol>
-<li>顶部快捷导航shortcut</li>
-<li>header</li>
-<li>nav</li>
-<li>Main（focus+newsflash）</li>
-<li>recommend（recom-hd+recom-bd）</li>
-<li>Footer</li>
-</ol>
-<p><strong>tips</strong>:</p>
-<p><a href="https://imgchr.com/" target="_blank" rel="noopener">https://imgchr.com/</a>  把本地图片转换成url。</p>
+        <h1 id="选择器小结"><a href="#选择器小结" class="headerlink" title="选择器小结"></a>选择器小结</h1><p>最基本的选择器是标签选择器(比如div),ID选择器(比如#header)还有类选择器(比如.tweet)。</p>
+<p>一些的不常见的选择器包括伪类选择器(:hover)，很多复杂的CSS3和正则选择器，比如：first-child，class ^= “grid-”。CSS选择器具有高效的继承性，引用Steve Souders的话， CSS选择器效率从高到低的排序如下：</p>
+<p>1.id选择器（#myid）</p>
+<p>2.类选择器（.myclassname）</p>
+<p>3.标签选择器（div,h1,p）</p>
+<p>4.相邻选择器（h1+p）</p>
+<p>5.子选择器（ul &gt; li）</p>
+<p>6.后代选择器（li a）</p>
+<p>7.通配符选择器（*）</p>
+<p>8.属性选择器（a[rel=”external”]）</p>
+<p>9.伪类选择器（a:hover, li:nth-child）</p>
+<p>img.title属性</p>
+<p>HTML 表单用于收集用户输入</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/html+css tips/" data-id="ck2hf45aj00032txzmhheodsx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/02/selector/" data-id="ck2hf45ap00082txzlrgs6jiv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,19 +112,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/10/21/part1-6/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          index
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/21/chishi/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/11/01/js/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">party</div>
+      <div class="article-nav-title">js_01</div>
     </a>
   
 </nav>

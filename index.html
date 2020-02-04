@@ -62,6 +62,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-omit1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/01/omit1/" class="article-date">
+  <time datetime="2019-12-01T07:44:00.596Z" itemprop="datePublished">2019-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="title-omit1"><a href="#title-omit1" class="headerlink" title="title:omit1"></a>title:omit1</h2><ol>
+<li><p>Base标签<br>在head中添加<base target="”_blank”"> 可实现所有链接都以新窗口打开，同理_blank改为_self则实现所有链接都以自身窗口打开<br>若想实现其中某个链接以不同方式打开，则对其单独设置target属性即可。</p>
+</li>
+<li><p>表格标题</p>
+<caption>标题</caption> 写在table标签内
+</li>
+<li><p>H5常用新标签<br>Header：定义文档的页眉 头部<br>Nav：定义导航链接的部分<br>Footer：定义文档或节的页脚 底部<br>Article：定义文章<br>Section：定义文档中的节<br>Aside：定义其所处内容之外的内容 侧边<br>Datalist：标签定义选项列表，请与input元素配合使用该元素<br>Fieldset:可将表单内的相关元素分组，打包</p>
+</li>
+</ol>
+<p>Datalist用法:<br>通过设置id并在input中的list属性链接这个id，从而达到智能显示的效果<br><input type="text" value="输入明星" list="star">     <!-- input里面用list --><br><datalist id="star">  <!-- datalist里面用id实现和input的链接 --><br>        <option>刘德华</option><br>        <option>郭富城</option><br>        <option>黎明</option><br>        <option>张学友</option><br>        <option>xxx</option><br>        <option>xxx</option><br>        <option>xxx</option><br>        <option>xxx</option><br></datalist><br>datalist与selection的区别:前者不仅可以选择，还可以输入。<br>datalist弊端：在不同浏览器的显示不同，少用<br>如果与之连接的input type值为url，则其value值必须添加http://</p>
+<p>Fieldset用法：<br>Fieldset用法：<br>与legend搭配使用，legend包含在fieldset里面负责写标题。例：</p>
+<fieldset>
+        <legend>用户登录</legend>   <!-- 标题 -->
+        用户名：<input type="text"> <br>
+        密　　码：<input type="password">
+</fieldset> 
+
+<ol start="4">
+<li>交集选择器<style>
+标签名.类名{}
+</style>
+
+</li>
+</ol>
+<p>5.CSS Speciality 权重值：<br>继承或*的贡献值   0,0,0,0<br>每个元素标签的贡献值 0,0,0,1<br>类、伪类、元素选择器的贡献值 0,0,1,0<br>Id选择器的贡献值 0,1,0,0<br>行内样式贡献值 1,0,0,0<br>！Important的贡献值 ∞无穷大</p>
+<p>6.边框图片<br>border-image-source：url（）；<br>border-image-slice：xx fill； 图片切片，不需加单位,即将图片四个边xx像素的宽度作为边框 fill则是将整个图片填充<br>border-image-width:xxpx 设置边框背景图宽度 但是不影响内容放置<br>border-image-outset:0  边框扩展，一般为0<br>border-image-repeat:repeat/round (前者直接平铺 后者缩放后平铺）<br>简写 border-image:source slice /width/outset repeat;</p>
+<p>7.取消轮廓线<br>语法：<br>Outline : width style color;<br>一般为none</p>
+<p>防止拖拽文本<br>textarea {resize: none;} </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/01/omit1/" data-id="ck67ouyb70009ynxzkwojvhc1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-emphasis" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/22/emphasis/" class="article-date">
@@ -105,7 +160,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/22/emphasis/" data-id="ck3mv6p520002smxz0oj5ntt2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/22/emphasis/" data-id="ck67ouyaz0003ynxzt2c1u8fb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -154,7 +209,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/02/selector/" data-id="ck3mv6p5s000fsmxzp5s7hehh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/02/selector/" data-id="ck67ouyba000dynxz87h6h2nk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -290,7 +345,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/01/js/" data-id="ck3mv6p5j0007smxzgbqlegcu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/01/js/" data-id="ck67ouyb00004ynxzw0wyib12" class="article-share-link">Share</a>
       
       
     </footer>
@@ -367,7 +422,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/27/inline/" data-id="ck3mv6p5i0006smxz4nastga6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/27/inline/" data-id="ck67ouyb20006ynxz4hos0udi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -399,7 +454,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一个块极盒子有宽度的要居中对齐就是margin: 0 auto;</p>
+        <p>一个块极盒子有宽度的nnq要居中对齐就是margin: 0 auto;</p>
 <p>a没有大小，有了绝对定位的盒子可以直接给大小</p>
 <p>行的元素（em、a、i、lable ）没有高度、没有大小，转换为行内块（行内块本来就有缝隙），且出现行内块 一般都会vertical-align:  middle;</p>
 <p>a href=”javascript:;”能点击但是不跳转</p>
@@ -415,7 +470,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/25/tips1025/" data-id="ck3mv6p5q000dsmxzzymmohcy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/25/tips1025/" data-id="ck67ouybb000fynxzyniyrbzk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -468,7 +523,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/page/" data-id="ck3mv6p5m0009smxzfkj18qu7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/23/page/" data-id="ck67ouyb40007ynxzahsf4a1o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -506,7 +561,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/22/wuxi/" data-id="ck3mv6p5u000gsmxzzrz13gyo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/22/wuxi/" data-id="ck67ouybb000eynxzm65wbmr9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -558,7 +613,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/transition/" data-id="ck3mv6p5o000bsmxzgj8qmio8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/transition/" data-id="ck67ouybd000hynxz59gms8fn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -595,72 +650,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/third/" data-id="ck3mv6p5p000csmxzpe81w2yx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-short_cut" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/21/short_cut/" class="article-date">
-  <time datetime="2019-10-21T04:09:16.000Z" itemprop="datePublished">2019-10-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/21/short_cut/">shortcut</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="顶部快捷导航制作经验"><a href="#顶部快捷导航制作经验" class="headerlink" title="顶部快捷导航制作经验"></a>顶部快捷导航制作经验</h1><p><strong>html初学者尝试制作类似电商风格的网页，本次记录的是第一部分制作导航栏的经验</strong></p>
-<ol>
-<li><p>由于不管是详情页还是列表页或者首页，网页头部中的导航栏是相同的，其中导航栏的效果如下图。</p>
-</li>
-<li><p>公共样式单独写在common.css下便于在html文件中引用。CSS选择器分为三类：id选择器、class选择器、标签选择器，此处多用class选择器。</p>
-</li>
-</ol>
-<ul>
-<li><p>.fl定义向左浮动，.fr定义向右浮动，此后在.html中如有块或行需要用到向左向右浮动直接引用即可，即设定中的class值。</p>
-</li>
-<li><p><strong>字体图标</strong>：网页上的购物车等页面元素其实<strong>是字体图标并不是图片</strong>。<a href="http://icomoon.io" target="_blank" rel="noopener">icomoon字库</a>，下载相应图标的压缩包并解压后，首先把其中的font文件夹放入网页项目的根目录下，然后将压缩包里的demo.html中需要的图标添加到.html文件对应的结构中（可能是div、span或li标签等），<code>&lt;span&gt;&lt;/span&gt;</code>，然后再在样式里声明字体，代码如下：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">font-family: 'icomoon';</span><br><span class="line">  src:  url('fonts/icomoon.eot?7kkyc2');</span><br><span class="line">  src:  url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),</span><br><span class="line">    url('fonts/icomoon.ttf?7kkyc2') format('truetype'),</span><br><span class="line">    url('fonts/icomoon.woff?7kkyc2') format('woff'),</span><br><span class="line">    url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');</span><br><span class="line">  font-weight: normal;</span><br><span class="line">  font-style: normal;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p>​                最后给相应的盒子使用字体：font-family: “icomoon”;</p>
-<ul>
-<li>版心：用.w确定版心的位置。在此次的页面中，设计快捷导航的基本思路是先确定版心的位置，然后分为左右两部分分别浮动在左右两边。</li>
-</ul>
-<ul>
-<li><p>对于一些颜色的字体，由于页面中会出现许多次，所以也可以将其颜色定义在公共样式表中，例如</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color: #c81623;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>对于栏中 | 的处理，这里设定其为12px*1px的灰色区域，字段margin中<code>margin: 9px 12px 0;</code>三个值分别为上外边距、左右外边距、下外边距。</p>
-</li>
-</ul>
-<ol start="3">
-<li>网站优化中有三大标签title、description、keywords，在index.html中，要注意这些字段的编写。</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/21/short_cut/" data-id="ck3mv6p5n000asmxzh5oumrjn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/21/third/" data-id="ck67ouyba000cynxzb9oq7am8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -693,7 +683,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
     </div>
   </div>
 
@@ -704,6 +694,10 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/12/01/omit1/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2019/11/22/emphasis/">emphasis</a>
@@ -721,10 +715,6 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
             <a href="/2019/10/27/inline/">inline</a>
           </li>
         
-          <li>
-            <a href="/2019/10/25/tips1025/">tips-1025</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -737,7 +727,7 @@ Name：用于指定表单的名称，以区分同一个页面中的多个表单�
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 Qian<br>
+      &copy; 2020 Qian<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

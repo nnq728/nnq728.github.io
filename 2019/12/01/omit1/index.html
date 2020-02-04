@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title:omit1 Base标签在head中添加 可实现所有链接都以新窗口打开，同理_blank改为_self则实现所有链接都以自身窗口打开若想实现其中某个链接以不同方式打开，则对其单独设置target属性即可。  表格标题 标题 写在table标签内  H5常用新标签Header：定义文档的页眉 头部Nav：定义导航链接的部分Footer：定义文档或节的页脚 底部Article：定义文章S">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/12/01/omit1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title:omit1 Base标签在head中添加 可实现所有链接都以新窗口打开，同理_blank改为_self则实现所有链接都以自身窗口打开若想实现其中某个链接以不同方式打开，则对其单独设置target属性即可。  表格标题 标题 写在table标签内  H5常用新标签Header：定义文档的页眉 头部Nav：定义导航链接的部分Footer：定义文档或节的页脚 底部Article：定义文章S">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-03T06:51:13.785Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title:omit1 Base标签在head中添加 可实现所有链接都以新窗口打开，同理_blank改为_self则实现所有链接都以自身窗口打开若想实现其中某个链接以不同方式打开，则对其单独设置target属性即可。  表格标题 标题 写在table标签内  H5常用新标签Header：定义文档的页眉 头部Nav：定义导航链接的部分Footer：定义文档或节的页脚 底部Article：定义文章S">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-omit1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/01/omit1/" class="article-date">
+  <time datetime="2019-12-01T07:44:00.596Z" itemprop="datePublished">2019-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="title-omit1"><a href="#title-omit1" class="headerlink" title="title:omit1"></a>title:omit1</h2><ol>
+<li><p>Base标签<br>在head中添加<base target="”_blank”"> 可实现所有链接都以新窗口打开，同理_blank改为_self则实现所有链接都以自身窗口打开<br>若想实现其中某个链接以不同方式打开，则对其单独设置target属性即可。</p>
+</li>
+<li><p>表格标题</p>
+<caption>标题</caption> 写在table标签内
+</li>
+<li><p>H5常用新标签<br>Header：定义文档的页眉 头部<br>Nav：定义导航链接的部分<br>Footer：定义文档或节的页脚 底部<br>Article：定义文章<br>Section：定义文档中的节<br>Aside：定义其所处内容之外的内容 侧边<br>Datalist：标签定义选项列表，请与input元素配合使用该元素<br>Fieldset:可将表单内的相关元素分组，打包</p>
+</li>
+</ol>
+<p>Datalist用法:<br>通过设置id并在input中的list属性链接这个id，从而达到智能显示的效果<br><input type="text" value="输入明星" list="star">     <!-- input里面用list --><br><datalist id="star">  <!-- datalist里面用id实现和input的链接 --><br>        <option>刘德华</option><br>        <option>郭富城</option><br>        <option>黎明</option><br>        <option>张学友</option><br>        <option>xxx</option><br>        <option>xxx</option><br>        <option>xxx</option><br>        <option>xxx</option><br></datalist><br>datalist与selection的区别:前者不仅可以选择，还可以输入。<br>datalist弊端：在不同浏览器的显示不同，少用<br>如果与之连接的input type值为url，则其value值必须添加http://</p>
+<p>Fieldset用法：<br>Fieldset用法：<br>与legend搭配使用，legend包含在fieldset里面负责写标题。例：</p>
+<fieldset>
+        <legend>用户登录</legend>   <!-- 标题 -->
+        用户名：<input type="text"> <br>
+        密　　码：<input type="password">
+</fieldset> 
+
+<ol start="4">
+<li>交集选择器<style>
+标签名.类名{}
+</style>
+
+</li>
+</ol>
+<p>5.CSS Speciality 权重值：<br>继承或*的贡献值   0,0,0,0<br>每个元素标签的贡献值 0,0,0,1<br>类、伪类、元素选择器的贡献值 0,0,1,0<br>Id选择器的贡献值 0,1,0,0<br>行内样式贡献值 1,0,0,0<br>！Important的贡献值 ∞无穷大</p>
+<p>6.边框图片<br>border-image-source：url（）；<br>border-image-slice：xx fill； 图片切片，不需加单位,即将图片四个边xx像素的宽度作为边框 fill则是将整个图片填充<br>border-image-width:xxpx 设置边框背景图宽度 但是不影响内容放置<br>border-image-outset:0  边框扩展，一般为0<br>border-image-repeat:repeat/round (前者直接平铺 后者缩放后平铺）<br>简写 border-image:source slice /width/outset repeat;</p>
+<p>7.取消轮廓线<br>语法：<br>Outline : width style color;<br>一般为none</p>
+<p>防止拖拽文本<br>textarea {resize: none;} </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/01/omit1/" data-id="ck67ouyb70009ynxzkwojvhc1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/22/emphasis/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">emphasis</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/01/omit1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/22/emphasis/">emphasis</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/02/selector/">selector</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/01/js/">js_01</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/27/inline/">inline</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Qian<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
